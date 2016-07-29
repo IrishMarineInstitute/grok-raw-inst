@@ -1,3 +1,3 @@
-#Patterns for the prefix added by the MI Spiddal Observatory
+#Grok patterns for the prefix added by the MI Spiddal Observatory
 MI_INST [a-zA-Z0-9._-]+
 MI_PREFIX %{TIMESTAMP_ISO8601:timestamp}\|%{MI_INST:instrument}\|
