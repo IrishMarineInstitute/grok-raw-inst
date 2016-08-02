@@ -1,3 +1,2 @@
-#Grok patterns for instrument outputs
-IDRONAUT_OCEAN7_304 %{NUMBER:pressure}%{SPACE}%{NUMBER:temperature}%{SPACE}%{NUMBER:conductivity}%{SPACE}%{NUMBER:salinity}%{SPACE}%{NUMBER:sound_velocity}%{SPACE}%{TIME}
+#Grok patterns for Wetlabs instrument outputs
 WETLABS_ECO_FLNTU_3137 %{MONTHNUM}\/%{MONTHDAY}\/%{YEAR}%{SPACE}%{TIME}%{SPACE}%{NUMBER:wavelength_fluorescence}%{SPACE}%{INT:chlorophyll_counts}%{SPACE}%{NUMBER:wavelength_turbidity}%{SPACE}%{INT:turbidity_counts}%{SPACE}%{NUMBER:thermistor}
