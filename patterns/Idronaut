@@ -1,2 +1,2 @@
 #Grok patterns for Idronaut instruments
-IDRONAUT_OCEAN7_304 %{NUMBER:pressure}%{SPACE}%{NUMBER:temperature}%{SPACE}%{NUMBER:conductivity}%{SPACE}%{NUMBER:salinity}%{SPACE}%{NUMBER:sound_velocity}%{SPACE}%{TIME}
+IDRONAUT_OCEAN7_304 %{NUMBER:pressure:float}%{SPACE}%{NUMBER:temperature:float}%{SPACE}%{NUMBER:conductivity:float}%{SPACE}%{NUMBER:salinity:float}%{SPACE}%{NUMBER:sound_velocity:float}%{SPACE}%{TIME:raw_time}
