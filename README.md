@@ -18,7 +18,7 @@ A simple example of using the patterns in Python is included in the root directo
 }
 ```
 
-The output from the Grok match can be piped to [jq](https://stedolan.github.io/jq/](a command line JSON processor) in order to generate standardised output e.g.
+The output from the Grok match can be piped to [jq](https://stedolan.github.io/jq/)(a command line JSON processor) in order to generate standardised output e.g.
 
 ```bash
 jq . | {id:"foo","phenomenonTime":{"Instant": .timestamp},"member":[{"type":"measurement","id": "CHLCount", "observedProperty": {"href": "http://vocab.nerc.ac.uk/collection/P01/current/FCNTRW01/"}, "procedure": {"href": "http://vocab.nerc.ac.uk/collection/L22/current/TOOL0215/"}, "result": {"uom": "http://vocab.nerc.ac.uk/collection/P06/current/UUUU/","value": .chlorophyll_counts}, "resultTime": .timestamp},{"type":"measurement","id": "TurbCount", "observedProperty": {"href": "http://vocab.nerc.ac.uk/collection/P01/current/NVLTOBS1/"}, "procedure": {"href": "http://vocab.nerc.ac.uk/collection/L22/current/TOOL0215/"}, "result": {"uom": "http://vocab.nerc.ac.uk/collection/P06/current/UUUU/","value": .turbidity_counts}, "resultTime": .timestamp}]}
