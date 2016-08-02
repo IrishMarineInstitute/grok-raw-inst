@@ -1,9 +1,9 @@
 # grok-raw-inst
-Parsing raw text from instrument outputs using grok patterns
+Parsing raw text from instrument outputs using [grok](https://www.elastic.co/guide/en/logstash/current/plugins-filters-grok.html) patterns
 
-The developed Grok patterns can be found in the /patterns directory of this repository
+The developed Grok patterns can be found in the [/patterns](https://github.com/IrishMarineInstitute/grok-raw-inst/tree/master/patterns) directory of this repository
 
-A simple example of using the patterns in Python is included in the root directory
+A simple example of using the patterns in Python is included in the [root](https://github.com/IrishMarineInstitute/grok-raw-inst) directory
 
 ## Example output
 ```javascript
